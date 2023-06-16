@@ -1,0 +1,116 @@
+
+body {
+    padding: 5px;
+}
+
+canvas {
+    max-width: 800px;
+    max-height: 800px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+#canvas {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(235, 249, 248);
+}
+
+div {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 1px, 6px;
+    border-radius: 3px;
+    background-color: rgb(232, 136, 12);
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(241, 162, 59);
+}
+
+#idealSelf, #realitySelf {
+    background-color: rgb(238, 243, 251);
+    padding: 3px 5px;
+}
+
+#idealMoney, #realityMoney {
+    background-color: rgb(217, 245, 230);
+    padding: 3px 5px;
+}
+
+#idealKnowledge, #realityKnowledge {
+    background-color: rgb(238, 243, 251);
+    padding: 3px 5px;
+}
+
+#idealFamily, #realityFamily {
+    background-color: rgb(217, 245, 230);
+    padding: 3px 5px;
+}
+
+#idealHobby, #realityHobby {
+    background-color: rgb(238, 243, 251);
+    padding: 3px 5px;
+}
+
+#idealSocial, #realitySocial {
+    background-color: rgb(217, 245, 230);
+    padding: 3px 5px;
+}
+
+#idealWork, #realityWork {
+    background-color: rgb(238, 243, 251);
+    padding: 3px 5px;
+}
+
+#idealHealth, #realityHealth {
+    background-color: rgb(217, 245, 230);
+    padding: 3px 5px;
+}
+
+footer {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#memoSaveClear {
+    display: flex;
+
+}
+
+#insight {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#memoSaveClear {
+    display: inline-block;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+#list {
+    margin: 0 auto;
+}
+
+#note {
+    text-align: center;
+}

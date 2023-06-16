@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+      <h1>人生の現在地の確認：大切なものと向き合っているか</h1>
+      <div id="description">
+        このワークでは、人生の領域やテーマにおける自分の満足度（時間、エネルギーの使い方、体験）を視覚化することで客観的に確認し、ありたい未来に向かってどんな行動を起こすべきかについての洞察を促します。<br />
+        最初に、人生の各領域に対する現在の満足度を１(低)〜10(高)で入力します。次に、1ヶ月後や3ヶ月後など、任意の期間後、どのような状態に改善したいかを同じく1〜10で入力します。レーダーチャートが表示され、現状とありたい状態のギャップを視覚化できます。
+      </div>
+
+      <div id="canvas">
+        <canvas id="myChart"></canvas>
+      </div>
+
+    <div class="container">
+      <div id="firstData">
+        <h2 class="reality">現在の状態</h2>
+        <div id="realitySelf">
+          (1)自分・自分に対しての意識
+          <input id="realitySelfInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="realityMoney">
+          (2)お金・物資的豊かさ
+          <input id="realityMoneyInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="realityKnowledge">
+          (3)スキル・知識習得
+          <input id="realityKnowledgeInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="realityFamily">
+          (4)家族など大切な存在（含ペット）
+          <input id="realityFamilyInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="realityHobby">
+          (5)趣味・娯楽
+          <input id="realityHobbyInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="realitySocial">
+          (6)社交・人間関係
+          <input id="realitySocialInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="realityWork">
+          (7)仕事・社会的地位
+          <input id="realityWorkInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="realityHealth">
+          (8)心身の健康
+          <input id="realityHealthInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <button id="realitySave">登録</button>
+      </div>
+
+      <div id="secondData">
+        <h2 class="ideal">こうありたい状態</h2>
+        <div id="idealSelf">
+          (1)自分・自分に対しての意識
+          <input id="idealSelfInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="idealMoney">
+          (2)お金・物資的豊かさ
+          <input id="idealMoneyInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="idealKnowledge">
+          (3)スキル・知識習得
+          <input id="idealKnowledgeInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="idealFamily">
+          (4)家族など大切な存在（含ペット）
+          <input id="idealFamilyInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="idealHobby">
+          (5)趣味・娯楽
+          <input id="idealHobbyInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="idealSocial">
+          (6)社交・人間関係
+          <input id="idealSocialInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="idealWork">
+          (7)仕事・社会的地位
+          <input id="idealWorkInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <div id="idealHealth">
+          (8)心身の健康
+          <input id="idealHealthInput" type="number" min="1" max="10" inputmode="numeric"/>
+        </div>
+        <button id="idealSave">登録</button>      
+      </div>
+    </div>
+    <div id="note">※ チャートは、新しい数値を入力して、「登録」をクリックすることで更新できます。</div>  
+    <!-- 洞察、対策 -->
+    <div id="insight">
+      <h2>ありたい未来に近づくためには、何を変えていく必要があるでしょうか</h2>
+      <input type="date" id="key" class="align-top">
+      <textarea id="memo" cols="50" rows="1" class="align-top"></textarea>
+      <div id="memoSaveClear">
+        <button id="save" class="align-top">保存</button>
+        <button id="clear" class="align-top">クリア</button>
+      </div>
+    <table id="list">
+      <!-- 洞察、メモを追加 -->
+    </table>
+    </div>
+    <hr>
+    <footer>2023 all right reserved</footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
+
+  </body>
+</html>
